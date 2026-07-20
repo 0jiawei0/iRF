@@ -8,7 +8,7 @@ and Matthew Weiner and the original Fortran codes by Leo Breiman and Adele
 Cutler.
 
 ### versions
-| | github/website | owner | language | install from | note |
+| | github/website | owner | language | installation | note |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **iRF** | [karlkumbier/iRF](https://github.com/karlkumbier/iRF) | karlkumbier | R | `devtools::install_github("karlkumbier/iRF")` ||
 | **iRF2.0** | [sumbose/iRF: iterative](https://github.com/sumbose/iRF) | sumbose | R | `devtools::install_github("karlkumbier/iRF2.0")` | from the instruction, it's installed from karlkumbier/iRF2.0 which is redirected to karlkumbier/iRF; <br>️ <mark>no plotInt()</mark> |
