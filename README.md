@@ -18,7 +18,9 @@ Cutler.
 ### note
 This repository is forked from `sumbose/iRF` by adding missing R headers in [classTree.c](src/classTree.c), [regTree.c](src/regTree.c), and [rfutils.c](src/rfutils.c) to resolve fatal compilation errors (`implicit declaration of function`) when compiling on Windows.
 
-> 🛑 **Windows & Rtools Compatibility Notice (R 4.5+):**
-> Modern C standards enforcement in newer compiler toolchains causes the original repository to fail during installation on Windows. 
-> * **For R 4.5:** The required **Rtools45** utilizes GCC 14, which strictly blocks compilation due to these missing implicit declarations.
-> * **For R 4.6+:** Since there is currently no Rtools46 available for the upcoming R 4.6 generation, and future Rtools versions will enforce even stricter compilation standards, the original `iRF` repository may remain <mark>**uninstallable on Windows**</mark> without these header fixes.
+> 🛑 **Windows & Rtools45 Compatibility Notice (R 4.5 & R 4.6+):**
+> According to the official CRAN [documentation](https://cran.r-project.org/bin/windows/base/howto-R-4.6.html), both **R 4.5** and the upcoming **R 4.6** generations utilize the **Rtools45** compiler toolchain on Windows.
+> 
+> Because Rtools45 introduces **GCC 14**, which strictly blocks compilation whenever implicit function declarations are present, the original `sumbose/iRF` repository is <mark>**uninstallable on modern Windows R environments**</mark>. 
+> 
+> This fork patches the standard R macros directly to guarantee seamless compilation and long-term forward compatibility for Windows R users.
