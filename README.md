@@ -7,6 +7,13 @@ This version uses source codes from the R package `randomForest` by Andy Liaw
 and Matthew Weiner and the original Fortran codes by Leo Breiman and Adele
 Cutler.
 
+### installation
+To download and install the package, use `remotes`
+```r
+install.packages("remotes")
+remotes::install_github("0jiawei0/iRF")
+```
+
 ### versions
 | | github/website | language | installation | note |
 | :--- | :--- | :--- | :--- | :--- |
